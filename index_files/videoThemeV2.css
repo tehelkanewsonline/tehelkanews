@@ -1,0 +1,339 @@
+.adform-video-container {
+  position: relative;
+  float: left;
+  background-color: #000;
+}
+.adform-video-container video {
+  float: left;
+}
+.adform-video-container-ios {
+  position: static;
+}
+.adform-video-base video::-webkit-media-controls-start-playback-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.adform-video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000 no-repeat 50%;
+}
+.adform-video-full-screen-on {
+  width: 100% !important;
+  height: 100% !important;
+}
+.adform-video-full-screen-on video {
+  width: 100% !important;
+  height: 100% !important;
+}
+.adform-video-full-screen-on .adform-video-poster {
+  width: 100% !important;
+  height: 100% !important;
+}
+.adform-video-full-screen-on .adform-video-full-screen {
+  background: url('../images/controls/fullscreen-off.svg?v=2');
+}
+.adform-video-full-screen-on .adform-video-full-screen:hover {
+  opacity: 0.7;
+}
+.adform-video-play-pause {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 9px;
+  left: 10px;
+  background: url('../images/controls/play.svg?v=2');
+}
+.adform-video-play-pause:hover {
+  opacity: 0.7;
+}
+.adform-video-stop {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 9px;
+  display: none;
+}
+.adform-video-stop:hover {
+  display: none;
+}
+.adform-video-rewind {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 9px;
+  display: none;
+}
+.adform-video-rewind:hover {
+  display: none;
+}
+.adform-video-big-play {
+  cursor: pointer;
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 50%;
+  top: 50%;
+  margin: -42px;
+  background: url('../images/controls/big-play.svg?v=2');
+}
+.adform-video-big-play:hover {
+  opacity: 0.7;
+}
+.adform-video-full-screen {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 9px;
+  background: url('../images/controls/fullscreen-on.svg?v=2');
+  right: 10px;
+}
+.adform-video-full-screen:hover {
+  opacity: 0.7;
+}
+.adform-video-sound {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 9px;
+  background: url('../images/controls/sound-on.svg?v=2');
+  right: 40px;
+}
+.adform-video-sound:hover {
+  opacity: 0.7;
+}
+.adform-video-state-playing .adform-video-play-pause {
+  background: url('../images/controls/pause.svg?v=2');
+}
+.adform-video-state-playing .adform-video-play-pause:hover {
+  opacity: 0.7;
+}
+.adform-video-state-playing .adform-video-big-play {
+  display: none;
+}
+.adform-video-state-playing .adform-video-big-play:hover {
+  display: none;
+}
+.adform-video-state-playing .adform-video-seek-bar:hover .adform-video-seek-bar-played::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  opacity: 1;
+}
+.adform-video-state-stopped .adform-video-rewind {
+  display: none;
+}
+.adform-video-state-stopped .adform-video-rewind:hover {
+  display: none;
+}
+.adform-video-state-stopped .adform-video-stop {
+  display: none;
+}
+.adform-video-state-stopped .adform-video-stop:hover {
+  display: none;
+}
+.adform-video-seek-bar {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 33px;
+  height: 20px;
+  opacity: 0.9;
+  background: transparent;
+}
+.adform-video-seek-bar-border {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+}
+.adform-video-seek-bar-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 2px;
+}
+.adform-video-seek-bar-loaded {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: #000;
+  opacity: 0.4;
+}
+.adform-video-seek-bar-played {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: #fff;
+  opacity: 0.8;
+}
+.adform-video-state-paused .adform-video-seek-bar:hover .adform-video-seek-bar-played::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  opacity: 1;
+}
+.adform-video-sound-off .adform-video-sound {
+  background: url('../images/controls/sound-off.svg?v=2');
+}
+.adform-video-sound-off .adform-video-sound:hover {
+  opacity: 0.7;
+}
+.adform-video-no-full-screen .adform-video-sound {
+  right: 10px;
+}
+.adform-video-no-full-screen .adform-video-seek-bar {
+  right: 10px;
+}
+.adform-video-no-full-screen .adform-video-full-screen {
+  display: none;
+}
+.adform-video-tablet .adform-video-seek-bar {
+  right: 10px;
+}
+.adform-video-tablet .adform-video-sound {
+  display: none;
+}
+.adform-video-tablet .adform-video-full-screen {
+  background: url('../images/controls/fullscreen-on.svg?v=2');
+}
+.adform-video-tablet .adform-video-full-screen:hover {
+  background: url('../images/controls/fullscreen-on.svg?v=2');
+}
+.adform-video-phone .adform-video-seek-bar {
+  right: 10px;
+}
+.adform-video-phone .adform-video-sound {
+  display: none;
+}
+.adform-video-phone .adform-video-full-screen {
+  display: none;
+}
+.adform-video-tablet.loadedmetadata .adform-video-full-screen {
+  opacity: 0.7;
+}
+.adform-video-tablet.loadedmetadata .adform-video-full-screen:hover {
+  opacity: 0.7;
+}
+.adform-video-mpeg .adform-video-seek-bar {
+  display: none;
+}
+.adform-video-mpeg .adform-video-stop {
+  display: none;
+}
+.adform-video-mpeg .adform-video-sound {
+  display: none;
+}
+.adform-video-mpeg .adform-video-rewind {
+  display: none;
+}
+.adform-video-mpeg .adform-video-full-screen {
+  display: none;
+}
+.adform-video-mpeg .adform-video-play-pause {
+  display: none;
+}
+.adform-video-mpeg .adform-video-mpeg-sound {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  bottom: 9px;
+  z-index: 200001;
+}
+.preloading .adform-video-big-play {
+  background: none;
+  display: block;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 32px;
+  font-family: Arial;
+  line-height: 84px;
+  text-align: center;
+  width: 83px;
+  height: 83px;
+}
+@-webkit-keyframes mpeg-sound {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+@-moz-keyframes mpeg-sound {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+@-o-keyframes mpeg-sound {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+@keyframes mpeg-sound {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+.mpeg-sound-bar {
+  position: absolute;
+  background: #9C9C9C;
+  margin: 0 20%;
+  bottom: 9px;
+  right: 10px;
+  height: 3px;
+  width: 5px;
+  -webkit-animation: mpeg-sound 0ms -800ms linear infinite alternate;
+  -moz-animation: mpeg-sound 0ms -800ms linear infinite alternate;
+  -o-animation: mpeg-sound 0ms -800ms linear infinite alternate;
+  animation: mpeg-sound 0ms -800ms linear infinite alternate;
+}
+.mpeg-sound-bar:nth-child(1) {
+  left: 1px;
+  -webkit-animation-duration: 474ms;
+  -moz-animation-duration: 474ms;
+  -o-animation-duration: 474ms;
+  animation-duration: 474ms;
+}
+.mpeg-sound-bar:nth-child(2) {
+  left: 7px;
+  -webkit-animation-duration: 433ms;
+  -moz-animation-duration: 433ms;
+  -o-animation-duration: 433ms;
+  animation-duration: 433ms;
+}
+.mpeg-sound-bar:nth-child(3) {
+  left: 13px;
+  -webkit-animation-duration: 407ms;
+  -moz-animation-duration: 407ms;
+  -o-animation-duration: 407ms;
+  animation-duration: 407ms;
+}
